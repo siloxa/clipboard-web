@@ -24,7 +24,8 @@ a {
   color: #5e67ff;
 }
 .container {
-    margin: 96px 525px;
+  width: 1200px;
+  margin: auto;
 }
 .text-left {
     text-align: left!important;

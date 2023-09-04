@@ -38,7 +38,7 @@
 
 <style scoped>
 .authentication-box {
-    display: block;
+    margin: auto;
     width: 390px;
     height: 480px;
 }
