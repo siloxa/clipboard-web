@@ -1,13 +1,20 @@
 <script setup>
-import Login from './components/authenticate/Login.vue';
-import Signup from './components/authenticate/Signup.vue';
+  import Login from './components/authenticate/Login.vue';
+  
 </script>
 
 <template>
-  <div class="container mt-5">
+  <div class="container">
     <Login />
   </div>
 </template>
 
 <style>
+  @font-face {
+    font-family: 'SF', monospace;
+    src: url(assets/font/SFPRODISPLAYREGULAR.OTF) format('otf');
+  }
+  body {
+    font-family: 'SF';
+  }
 </style>

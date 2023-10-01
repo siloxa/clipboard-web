@@ -1,10 +1,17 @@
-<script setup>
+<script>
+    import Button from '../utils/Button.vue';
+    
+    export default {
+        components: {
+            Button
+        }
+    }
 </script>
 
 <template>
-            <div class="row">
-            <div class="col-12 col-sm-8 col-md-6 mx-auto">
-                <div class="login-box size-card m-auto">
+    <div class="row mt-5">
+        <div class="col-12 col-sm-8 col-md-6 mx-auto">
+             <div class="login-box size-card m-auto">
                     <div class="login-icons position-relative pt-3">
                         <svg class="position-absolute icons-pos-1" xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66" fill="none">
                             <rect x="5" y="5" width="56" height="56" rx="28" fill="#CDD0FF"/>
@@ -29,7 +36,7 @@
                     </div>
                     <p class="fw-bold mb-4">Forgot password?</p>
                     <div class="login-button-div mb-4">
-                        <button class="login-button">Login</button>
+                        <Button text="Login" />
                     </div>
                     <div class="footer-page">
                         <p class="text-center">Already have an account?<a href="#">Register</a></p>
@@ -71,14 +78,6 @@
     justify-content: center;
     align-items: center;
     align-self: stretch;
-}
-.login-button{
-    border: none;
-    border-radius: 12px;
-    background: var(--primary-light, #5E67FF);
-    width: 342px;
-    height: 52px;
-    color: aliceblue;
 }
 .footer-page{
     display: flex;
