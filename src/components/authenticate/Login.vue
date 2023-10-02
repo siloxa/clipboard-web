@@ -1,9 +1,11 @@
 <script>
+    import Header from './utils/Header.vue';
     import Button from '../utils/Button.vue';
     import Input from '../utils/Input.vue';
     
     export default {
         components: {
+            Header,
             Button,
             Input
         }
@@ -14,19 +16,11 @@
     <div class="row mt-5">
         <div class="col-12 col-sm-8 col-md-6 mx-auto">
              <div class="login-box size-card m-auto">
-                    <div class="login-icons position-relative pt-3">
-                        <svg class="position-absolute icons-pos-1" xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66" fill="none">
-                            <rect x="5" y="5" width="56" height="56" rx="28" fill="#CDD0FF"/>
-                            <rect x="5" y="5" width="56" height="56" rx="28" stroke="#E7E8FF" stroke-width="10"/>
-                        </svg>
-                        <svg class="position-absolute icons-pos-2 m-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M20 21C20 19.6044 20 18.9067 19.8278 18.3389C19.44 17.0605 18.4395 16.06 17.1611 15.6722C16.5933 15.5 15.8956 15.5 14.5 15.5H9.5C8.10444 15.5 7.40665 15.5 6.83886 15.6722C5.56045 16.06 4.56004 17.0605 4.17224 18.3389C4 18.9067 4 19.6044 4 21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z" stroke="#5E67FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <p class="text-center fw-bold fs-5">Welcome!</p>
+                    <Header icon="user" title="Welcome Back!"/>
                     <div class="mb-3" style="margin-top: 80px;">
                         <Input type="email" label="Email" placeholder="Enter your email"/>
                     </div>
+
                     <div class="mb-4 position-relative password-fild">
                         <Input type="password" label="Password" placeholder="Enter your password"/>
                         <svg class="position-absolute icons-pos-3" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
@@ -34,36 +28,25 @@
                         </svg>
                         <p class="text-muted">Must be at least 8 characters.</p>
                     </div>
+
                     <p class="fw-bold mb-4">Forgot password?</p>
+
                     <div class="login-button-div mb-4">
                         <Button text="Login" />
                     </div>
+
                     <div class="footer-page">
                         <p class="text-center">You don't have an account?<a href="#">Register</a></p>
                     </div>
-
                 </div>
             </div>
         </div>
-
 </template>
 
 <style scoped>
 .size-card{
     width: 314px;
     height: 509px;
-}
-.login-icons{
-    width: 342px;
-    height: 80px;
-}
-.icons-pos-1{
-    left: 35%;
-    top: 0%;
-}
-.icons-pos-2{
-    left: 36.3%;
-    top: 3%;
 }
 .icons-pos-3{
     left: 90%;
