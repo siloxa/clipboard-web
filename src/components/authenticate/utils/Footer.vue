@@ -1,6 +1,16 @@
+<script setup>
+    defineProps({
+        page: {
+            type: String,
+            required: true
+        }
+    })
+</script>
+
 <template>
     <div>
-        <p>You don't have an account?<a href="#">Register</a></p>
+        <p v-if="page == 'login'">Don't have an account? <RouterLink to="/register">REGISTER</RouterLink></p>
+        <p v-if="page == 'register'">Already have an account? <RouterLink to="/login">LOGIN</RouterLink></p>
     </div>
 </template>
 

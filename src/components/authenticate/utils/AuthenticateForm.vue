@@ -1,9 +1,12 @@
 <template>
     <div class="row mt-5">
         <div class="col-12 col-sm-8 col-md-6 mx-auto">
-            <div class="login-box m-auto">
+            <div class="form-box m-auto">
                 <slot name="header"></slot>
                 <slot></slot>
+                <div class="form-button">
+                    <slot name="button"></slot>
+                </div>
                 <slot name="footer"></slot>
             </div>
         </div>
@@ -11,8 +14,15 @@
 </template>
 
 <style scoped>
-    .login-box{
+    .form-box{
         width: 314px;
         height: 509px;
+    }
+    .form-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+        margin-bottom: 12px;
     }
 </style>

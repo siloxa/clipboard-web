@@ -21,11 +21,11 @@
             <p class="text-muted" style="display: none;">Must be at least 8 characters.</p>
         </div>
         <p class="fw-bold forgot-pass">Forgot password?</p>
-        <div class="login-button-div">
+        <template #button>
             <Button text="Login" />
-        </div>
+        </template>
         <template #footer>
-            <Footer />
+            <Footer page="login" />
         </template>
     </AuthenticateForm>
 </template>
@@ -41,12 +41,5 @@
 }
 .forgot-pass{
     margin-bottom: 36px;
-}
-.login-button-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: stretch;
-    margin-bottom: 12px;
 }
 </style>
