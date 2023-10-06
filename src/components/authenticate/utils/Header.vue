@@ -1,5 +1,6 @@
 <script setup>
     import UserIcon from '../icons/UserIcon.vue'
+    import KeyIcon from '../icons/KeyIcon.vue'
 
     defineProps({
         icon: {
@@ -15,7 +16,8 @@
 
 <template>
     <div class="pt-3">
-        <UserIcon class="icon" />
+        <UserIcon v-if="icon == 'user'" class="icon" />
+        <KeyIcon v-if="icon == 'key'" class="icon" />
     </div>
     <p class="text-center fw-bold fs-5">{{title}}</p>
 </template>

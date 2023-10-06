@@ -15,6 +15,11 @@ const router = createRouter({
       component: () => import('../views/authenticate/LoginView.vue')
     },
     {
+      path: '/forgot-password',
+      name: 'frogot-password',
+      component: () => import('../views/authenticate/ForgotPasswordView.vue')
+    },
+    {
       path: '/register',
       name: 'register',
       component: () => import('../views/authenticate/RegisterView.vue')

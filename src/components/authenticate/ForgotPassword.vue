@@ -10,22 +10,16 @@
 <template>
     <AuthenticateForm>
         <template #header>
-            <Header icon="user" title="Welcome Back!"/>
+            <Header icon="key" title="Forgot Password?"/>
         </template>
         <div class="mb-3" style="margin-top: 80px;">
             <Input type="email" label="Email" placeholder="Enter your email"/>
         </div>
-        <div class="mb-4 position-relative password-fild">
-            <Input type="password" label="Password" placeholder="Enter your password"/>
-            <PasswordToggleIcon class="position-absolute icons-pos-3" />
-            <p class="text-muted" style="display: none;">Must be at least 8 characters.</p>
-        </div>
-        <RouterLink class="fw-bold forgot-pass" to="/forgot-password">Forgot password?</RouterLink>
         <template #button>
-            <Button text="LOGIN" />
+            <Button text="RESET PASSWORD" />
         </template>
         <template #footer>
-            <Footer page="login" />
+            <Footer page="forgot-password" />
         </template>
     </AuthenticateForm>
 </template>
