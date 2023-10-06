@@ -22,7 +22,7 @@
         </div>
         <p class="fw-bold forgot-pass">Forgot password?</p>
         <template #button>
-            <Button text="Login" />
+            <Button text="LOGIN" />
         </template>
         <template #footer>
             <Footer page="login" />
