@@ -10,5 +10,15 @@
 
 <template>
     <label class="form-label">{{label}}</label>
-    <input :type="type" class="form-control" :placeholder="placeholder">
+    <input class="form-control" :type="type" :placeholder="placeholder">
 </template>
+
+<style scoped>
+input{
+    border: 1px solid #EDEDED !important;
+    border-radius: 8px !important;
+}
+input::placeholder{
+    color: #CBCBCB;
+}
+</style>

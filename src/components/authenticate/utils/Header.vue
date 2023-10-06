@@ -15,14 +15,20 @@
 
 <template>
     <div class="pt-3">
-        <UserIcon />
+        <UserIcon class="icon" />
     </div>
     <p class="text-center fw-bold fs-5">{{title}}</p>
 </template>
 
 <style scoped>
     div{
-        width: 342px;
+        display: flex;
         height: 80px;
+    }
+    div .icon{
+        margin: auto;
+    }
+    p {
+        margin-top: 24px;
     }
 </style>
