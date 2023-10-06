@@ -20,7 +20,9 @@
             <PasswordToggleIcon class="position-absolute icons-pos-3" />
             <p class="text-muted" style="display: none;">Must be at least 8 characters.</p>
         </div>
-        <RouterLink class="fw-bold forgot-pass" to="/forgot-password">Forgot password?</RouterLink>
+        <div class="forgot-pass">
+            <RouterLink class="fw-bold" to="/forgot-password">Forgot password?</RouterLink>
+        </div>
         <template #button>
             <Button text="LOGIN" />
         </template>
@@ -41,5 +43,9 @@
 }
 .forgot-pass{
     margin-bottom: 36px;
+}
+.forgot-pass a{
+    text-decoration: none;
+    color: black;
 }
 </style>
